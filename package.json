@@ -1,0 +1,30 @@
+{
+  "name": "learing-javascript-",
+  "version": "1.0.0",
+  "description": "= Learing-JavaScript, 3rd Edition\r == Chapter 2: JavaScript Development Tools",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponyong/Learing-JavaScript-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ponyong/Learing-JavaScript-/issues"
+  },
+  "homepage": "https://github.com/ponyong/Learing-JavaScript-#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0"
+  }
+}

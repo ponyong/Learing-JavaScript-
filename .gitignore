@@ -10,3 +10,7 @@ node_modules
 #임시 파일
 *.tmp
 *~
+
+#ES5 파일
+public/dist
+dist
