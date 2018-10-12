@@ -32,4 +32,15 @@ const validatedEmail = validateEmail(email);
     else {
         console.log(`Valid email: ${validatedEmail}`);
     }
+} catch (err) {
+    console.log(`Error: ${err.message}`);
+}
+// throw 를 호출하면 함수는 즉시 실행을 멈추고 이동합니다.
+
+try {
+    throw new Error("whoops");
+} catch (err) {
+    // catch
+}finally {
+    // catch에서 아무것도 잡아내지 않았다면 이곳을 실행 
 }
