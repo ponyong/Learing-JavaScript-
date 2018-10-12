@@ -91,5 +91,16 @@ function greet() {
     return `Hello, I'm ${this.name}`;
 }
 greet();
-console.log(greet.call(bruce));
+greet.call(bruce);
 greet.call(madeline);
+
+// call과 함께 this로 쓸 객체를 넘기면 메서드처럼 사용가능
+// 첫 값은 this , 매개변수가 더있으면 호출 함수로 전달됩니다.
+
+update.apply(bruce, [1995 , "actor"]);
+// apply는 배열 여소를 매개변수로 사용해야 할 때 유용함
+
+const updateBruce = update.bind(bruce);
+// bind 는 this의 값을 영구적으로 바꿀 수 있습니다. 
+// bind는 다른 call , apply , bind와 함께 사용 할 수 없습니다. 
+// 잘못 사용하면 버그에 빠질 수 있으니 조심해야 합니다.
