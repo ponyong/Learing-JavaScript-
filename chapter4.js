@@ -87,7 +87,6 @@ do {
 } while ( true )
 
 /* switch 문 */
-
 switch(expression) {
     case value1:
         break;
@@ -98,3 +97,7 @@ switch(expression) {
     //....
     default: // if all case fail run this area
 } 
+
+/* for in , for of */
+
+// return , break, continue 문을 잘 활용하여 불필요한 연산 줄이는 것이 필요합니다.

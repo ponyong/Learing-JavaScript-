@@ -1,7 +1,13 @@
 // 변수 , 상수 , 리터럴 
+// var , let , const;
 
+
+// var = 기존의 변수선언 전역변수 느낌
+// let = 구문내의 변수만 적용한다 -> 지역변수와 비슷
+// const = 상수 고정된 값으로 변화를 주어도 변화하지 않는다
 // let 키워드 
 // ES6 에서 새로 생긴 변수 타입
+
 
 let currentTempC = 22;
 
@@ -12,7 +18,6 @@ let currentTempC = 22;
 const Room_Temp_C = 21.5;
 
 // $ 로 시작 하는 식별자는 보통 JQuery 객체를 나타냅니다 .
-
 // 원시타입 (숫자, 문자열, 불리언 , null, undefined , Symbol) -> 불변 (값이 바뀔수 없다는 말은 아닙니다.)
 // 내장 객체 타입 ( Array , Date , RegExp , Map, WeakMap , Set , WeakSet) 등등 
 

@@ -11,7 +11,7 @@
 
 // 5.4 비교 연산자
     // === 일치함  == 동등함 , 대소관계
-
+        
 // 5.5 숫자 비교
     // NaN === NaN  -> false
     // NaN == NaN -> false
@@ -22,6 +22,7 @@ while (true) {
     n += 0.1;
     if(n ===0.3) break;
 }
+
 console.log(`Stopped at ${n}`);
 // n이 3회째 n = 0.30000000000004  가 됩니다. 
 
