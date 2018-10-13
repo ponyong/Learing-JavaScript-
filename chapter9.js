@@ -64,5 +64,3 @@ class Car extends Vehicle {
     }
 }
 
-
-// 다형성
