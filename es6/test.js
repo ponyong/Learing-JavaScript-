@@ -6,12 +6,16 @@ const sentences = [
 ];
 
 //es6 기능 : 객체 분해
+//객체 비구조화 할당이라고 주로 부름(or 구조분해)
 function say ({subject , verb , object}) {
     //es6 기능: 템플릿 문자열
     //아래 사용한 것은 따옴표가 아니라 백틱(`), 즉 
     //키보드의 탭키 바로 위에 있는 문자입니다.
     console.log(`${subject} ${verb} ${object}`);
 }
+//이런식의 방법도 있음
+const hello = {name:'junghun',id:'azxca1731'};
+const { name, id } = Hello;
 
 // es6 기능: for ..of 
 for(let s of sentences) {
