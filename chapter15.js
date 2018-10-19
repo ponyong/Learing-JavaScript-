@@ -39,3 +39,41 @@ new Date('June 14, 1903');
 // npm install --save moment-timezone  으로 설치후 require 명령으로 불러올수 있습니다. 
 
 const momnet = require('moment-timezone');
+
+// 서버에서 날짜를 생성할 때는 UTC 를 사용하거나 타임존을 명시하는것이 좋다.
+const d = new Date(Date.UTC(2016,4,27));
+
+// 특정 타임존에 있는 서버의 날짜를 생성할때에는 moment.tz 를 써서 Date 를 만들면 된다.
+
+const d = moment.tz([2016,3,27,9,19], 'America/Los_Angeles').toDate();
+
+// 15.6 날짜 전송
+
+// 일반적으로 Date 인스턴스는 날짜를 utc 기준 타임스탬프로 저장함으로 안전한 편이다.
+// JSON 파싱을 통해 String 으로 변경하면 가장 확실하게 전송이 가능
+
+// JS가 아닌 시스템과 날짜 데이터를 주고받을 때는 주의를 할 필요가 있습니다. ( 타입이 다를 수 있음)
+
+// 15.7 날짜 형식
+
+// format 메소드를 통하여 날짜를 원하는 형식으로 만들 수 있습니다. 
+
+// ex) MMMM , YYYY , M 등등 자세한 것은 moment.js 온라인 문서에서 제공하는 라이브러리를 참고하면 된다.
+
+// 15.8 날짜 구성 요소
+
+// 년 , 월 , 일,  요일, 시, 분 , 초 , .초 까지 메서드를 통해 지원합니다. 
+// UTC 기준 메서드도 포함 되어있습니다.
+
+d.getFullYear();
+d.getUTCFullYear();
+//  ... ~
+
+// 날짜 비교는 숫자 대소 비교로 구분할수 있습니다. 
+
+// 날짜의 빼기 연산으로 두 날짜 사이의 시간 또한 구할 수 있습니다. 
+
+// 날짜를 더하거나 빼는 메서드도 내장되어있습니다.
+let m = moment();
+m.add(3,'days'); // 3일 후
+m.subtract(2, 'years');  // 2년전
