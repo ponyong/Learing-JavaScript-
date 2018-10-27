@@ -135,4 +135,29 @@ input.replace(/<i>(.*?)<\/i>/ig,'<strong>$1</strong>');
 let html2 = '<a class="nope" href="/yep">Yep</a>';
 html2 = html.replace(/<a .*?(href=".*?").*?>/, '<a $1>');
 
-console.log(html2);
+// $1 $2 숫자 참조 이외에도 
+// $` 일치하는것 앞 전부를 참조
+// $& 일치하는것 자체
+// $' 일치하는 것 이후를 전부 참조 등이있다.
+
+// 17.16 함수를 이용한 교체
+const html = 
+    `<a class="foo" href="/foo" id="foo">Foo</a>\n`;
+
+
+// 17.17 위치지정
+
+// ~~으로 시작하는 문자열, __으로 끝나는 문자열 등 에서 ~~, __ 를 앵커라고 합니다. 
+// ^는 문자열의 맨 처음
+// $는 문자열의 마지막을 나타냅니다.
+
+const input = "It was the best of times, it was the worst of times";
+
+const beginning = input.match(/^\w+/g); // It
+
+// 문자열에 \n (줄바꿈) 문자가 있다면 m 플래그로 각줄의 처음과 끝을 찾을 수 있습니다.
+
+const beginnings = input.match(/^\w+/mg);
+
+
+//17.18 , 19 , 20.. Q..
