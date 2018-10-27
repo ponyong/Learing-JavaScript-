@@ -36,6 +36,16 @@ $('p')
 $('p')
     .after('<hr>')
     .before('<hr>');
+// 이 메소드는 삽입 할 자리를 호출하지만
 
+// appendTo , insertBefore, insertAfter 처럼 요소에 호출하는 메소드도 있습니다.
 
+// CSS의 스타일도 쉽게 바꿀 수 있습니다.
 
+// addClass  클래스 추가
+// removeClass 클래스 제거
+// toggleClass 클래스 토글
+// :even , :odd 선택자로 홀짝 요소 선택가능합니다. 
+
+// 선택한 요소의 부분집합만을 필요로 할때
+// eq, filter, not find 등이 있습니다. 
